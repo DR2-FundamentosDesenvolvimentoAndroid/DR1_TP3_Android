@@ -1,0 +1,2 @@
+rootProject.name='DR1TP3Android'
+include ':app'
