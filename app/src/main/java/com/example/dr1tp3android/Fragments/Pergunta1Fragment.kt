@@ -31,17 +31,17 @@ class Pergunta1Fragment : Fragment() {
             investidor = ViewModelProviders.of(it).get(InvestidorViewModel::class.java)
         }
 
-        btnProximo1.setOnClickListener{
-            if(respostaA1.isChecked){
+        btnProximo2.setOnClickListener{
+            if(respostaA2.isChecked){
                 investidor.acumulador += 0
                 findNavController().navigate(R.id.pergunta2Fragment)
-            }else if(respostaB1.isChecked){
+            }else if(respostaB2.isChecked){
                 investidor.acumulador += 2
                 findNavController().navigate(R.id.pergunta2Fragment)
-            }else if(respostaC1.isChecked){
+            }else if(respostaC2.isChecked){
                 investidor.acumulador += 3
                 findNavController().navigate(R.id.pergunta2Fragment)
-            }else if(respostaD1.isChecked){
+            }else if(respostaD2.isChecked){
                 investidor.acumulador += 4
                 findNavController().navigate(R.id.pergunta2Fragment)
             }else{
@@ -50,8 +50,6 @@ class Pergunta1Fragment : Fragment() {
                     Toast.LENGTH_SHORT).show()
             }
         }
-
-
     }
 
 }

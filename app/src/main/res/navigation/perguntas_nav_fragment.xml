@@ -15,4 +15,39 @@
         android:name="com.example.dr1tp3android.Fragments.Pergunta2Fragment"
         android:label="fragment_pergunta2"
         tools:layout="@layout/fragment_pergunta2" />
+    <fragment
+        android:id="@+id/pergunta3Fragment"
+        android:name="com.example.dr1tp3android.Fragments.Pergunta3Fragment"
+        android:label="fragment_pergunta3"
+        tools:layout="@layout/fragment_pergunta3" />
+    <fragment
+        android:id="@+id/pergunta4Fragment"
+        android:name="com.example.dr1tp3android.Fragments.Pergunta4Fragment"
+        android:label="fragment_pergunta4"
+        tools:layout="@layout/fragment_pergunta4" />
+    <fragment
+        android:id="@+id/pergunta5Fragment"
+        android:name="com.example.dr1tp3android.Fragments.Pergunta5Fragment"
+        android:label="fragment_pergunta5"
+        tools:layout="@layout/fragment_pergunta5" />
+    <fragment
+        android:id="@+id/pergunta6Fragment"
+        android:name="com.example.dr1tp3android.Fragments.Pergunta6Fragment"
+        android:label="fragment_pergunta6"
+        tools:layout="@layout/fragment_pergunta6" />
+    <fragment
+        android:id="@+id/pergunta7Fragment"
+        android:name="com.example.dr1tp3android.Fragments.Pergunta7Fragment"
+        android:label="fragment_pergunta7"
+        tools:layout="@layout/fragment_pergunta7" />
+    <fragment
+        android:id="@+id/pergunta10Fragment"
+        android:name="com.example.dr1tp3android.Fragments.Pergunta10Fragment"
+        android:label="fragment_pergunta10"
+        tools:layout="@layout/fragment_pergunta10" />
+    <fragment
+        android:id="@+id/pergunta11Fragment"
+        android:name="com.example.dr1tp3android.Fragments.Pergunta11Fragment"
+        android:label="fragment_pergunta11"
+        tools:layout="@layout/fragment_pergunta11" />
 </navigation>

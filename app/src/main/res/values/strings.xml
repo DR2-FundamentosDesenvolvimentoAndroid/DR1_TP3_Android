@@ -3,6 +3,68 @@
     <string name="titulo">Analisador de Perfil de Investidor</string>
     <string name="link">Metodologia adaptada do questionário do Banco Paulista\n https://www.bancopaulista.com.br/Arquivos/QuestionarioAPI.pdf </string>
 
+    <!-- TODO: PERGUNTAS 1 -->
+    <string name="Pergunta1">1. Por quanto tempo você pretende deixar seu dinheiro investido?</string>
+    <string name="A1">Menos de 6 meses</string>
+    <string name="B1">Entre 6 meses e 1 ano</string>
+    <string name="C1">Entre 1 ano e 3 anos</string>
+    <string name="D1">Acima de 3 anos</string>
+
+    <!-- TODO: PERGUNTAS 2 -->
+    <string name="Pergunta2">2. Qual o objetivo desse investimento? </string>
+    <string name="A2">Preservação do capital para não perder valor ao longo do tempo, assumindo baixos riscos de perdas</string>
+    <string name="B2">Aumento gradual do capital ao longo do tempo, assumindo riscos moderados</string>
+    <string name="C2">Aumento do capital acima da taxa de retorno média do mercado, mesmo que isso implique assumir riscos de perdas elevadas</string>
+    <string name="D2">Obter no curto prazo retornos elevados e significativamente acima da taxa de retorno média do mercado, assumindo riscos elevados</string>
+
+    <!-- TODO: PERGUNTAS 3 -->
+    <string name="Pergunta3">3. Qual das alternativas melhor classica sua formação e experiência com o mercado financeiro?</string>
+    <string name="A3">Não possuo formação acadêmica ou conhecimento do mercado financeiro</string>
+    <string name="B3"> Possuo formação acadêmica na área financeira, mas não tenho experiência com o mercado financeiro</string>
+    <string name="C3">Possuo formação acadêmica em outra área, mas possuo conhecimento do mercado financeiro </string>
+    <string name="D3">Possuo formação acadêmica na área financeira ou pleno conhecimento do mercado financeiro</string>
+
+    <!-- TODO: PERGUNTAS 4 -->
+    <string name="Pergunta4">4. Considerando seus rendimentos regulares, qual a porcentagem você pretende reservar para aplicações nanceiras?</string>
+    <string name="A4">No máximo 25%</string>
+    <string name="B4">Entre 25,01 e 50%</string>
+    <string name="C4">Acima de 50%</string>
+
+    <!-- TODO: PERGUNTAS 5 -->
+    <string name="Pergunta5">5. Caso as suas aplicações sofressem uma queda superior a 30%, o que você faria?</string>
+    <string name="A5">Resgataria toda a aplicação e aplicaria na poupança </string>
+    <string name="B5">Manteria aplicação aguardando uma melhora do mercado</string>
+    <string name="C5">Aumentaria a aplicação para aproveitar as oportunidades do mercado</string>
+
+    <!-- TODO: PERGUNTAS 6 -->
+    <string name="Pergunta6">6. Como está distribuído o seu patrimônio? </string>
+    <string name="A6">Meu patrimônio não está aplicado ou está todo aplicado em renda xa e/ou imóveis</string>
+    <string name="B6">Menos de 25% em renda variável e o restante em renda xa e/ou imóveis</string>
+    <string name="C6">Entre 25,01 e 50% aplicado em renda variável e o restante em renda fixa e/ou imóveis</string>
+    <string name="D6">Acima de 50% em renda variável </string>
+
+    <!-- TODO: PERGUNTAS 7 -->
+    <string name="Pergunta7">7. Em relação as aplicações e rendimentos, em qual dessas situações você se enquadra? </string>
+    <string name="A7">Conto com o rendimento dessas aplicações para complementar minha renda mensal </string>
+    <string name="B7">Eventualmente posso resgatar parte das aplicações para fazer frente aos meus gastos. Contudo, não tenho intenção de resgatar no curto prazo e pretendo fazer aplicações regulares</string>
+    <string name="C7">Não tenho intenção de resgatar no curto prazo, mas não pretendo realizar novas aplicações</string>
+    <string name="D7">Não tenho intenção de resgatar no curto prazo e ainda pretendo fazer aplicações regulares</string>
+
+    <!-- TODO: PERGUNTAS 10 -->
+    <string name="Pergunta10">10. Qual sua faixa de renda mensal média?</string>
+    <string name="A10">Até R$ 1.000 </string>
+    <string name="B10">De R$ 1.001 até R$ 5.000</string>
+    <string name="C10">De R$ 5.001 até R$ 10.000</string>
+    <string name="D10">Acima de R$ 10.000</string>
+
+    <!-- TODO: PERGUNTAS 11 -->
+    <string name="Pergunta11">11. Qual o valor aproximado do seu patrimônio?</string>
+    <string name="A11">Até R$ 10.000 </string>
+    <string name="B11">De R$ 10.001 até R$ 100.000</string>
+    <string name="C11">De R$ 100.001 até R$ 500.000</string>
+    <string name="D11">De R$ 500.001 até R$ 1.000.000</string>
+    <string name="D12">Acima de R$ 1.000.001</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
