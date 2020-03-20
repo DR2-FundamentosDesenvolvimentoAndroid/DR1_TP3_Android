@@ -48,7 +48,7 @@
                 android:id="@+id/pergunta2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="2. Qual o objetivo desse investimento?"
+                android:text="@string/Pergunta2"
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
@@ -61,24 +61,28 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
                     android:text="@string/A2" />
 
                 <RadioButton
                     android:id="@+id/respostaB2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
                     android:text="@string/B2" />
 
                 <RadioButton
                     android:id="@+id/respostaC2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
                     android:text="@string/C2" />
 
                 <RadioButton
                     android:id="@+id/respostaD2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
                     android:text="@string/D2" />
             </RadioGroup>
 

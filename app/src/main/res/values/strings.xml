@@ -18,14 +18,14 @@
     <string name="D2">Obter no curto prazo retornos elevados e significativamente acima da taxa de retorno média do mercado, assumindo riscos elevados</string>
 
     <!-- TODO: PERGUNTAS 3 -->
-    <string name="Pergunta3">3. Qual das alternativas melhor classica sua formação e experiência com o mercado financeiro?</string>
+    <string name="Pergunta3">3. Qual das alternativas melhor classifica sua formação e experiência com o mercado financeiro?</string>
     <string name="A3">Não possuo formação acadêmica ou conhecimento do mercado financeiro</string>
     <string name="B3"> Possuo formação acadêmica na área financeira, mas não tenho experiência com o mercado financeiro</string>
     <string name="C3">Possuo formação acadêmica em outra área, mas possuo conhecimento do mercado financeiro </string>
     <string name="D3">Possuo formação acadêmica na área financeira ou pleno conhecimento do mercado financeiro</string>
 
     <!-- TODO: PERGUNTAS 4 -->
-    <string name="Pergunta4">4. Considerando seus rendimentos regulares, qual a porcentagem você pretende reservar para aplicações nanceiras?</string>
+    <string name="Pergunta4">4. Considerando seus rendimentos regulares, qual a porcentagem você pretende reservar para aplicações financeiras?</string>
     <string name="A4">No máximo 25%</string>
     <string name="B4">Entre 25,01 e 50%</string>
     <string name="C4">Acima de 50%</string>
@@ -38,8 +38,8 @@
 
     <!-- TODO: PERGUNTAS 6 -->
     <string name="Pergunta6">6. Como está distribuído o seu patrimônio? </string>
-    <string name="A6">Meu patrimônio não está aplicado ou está todo aplicado em renda xa e/ou imóveis</string>
-    <string name="B6">Menos de 25% em renda variável e o restante em renda xa e/ou imóveis</string>
+    <string name="A6">Meu patrimônio não está aplicado ou está todo aplicado em renda fixa e/ou imóveis</string>
+    <string name="B6">Menos de 25% em renda variável e o restante em renda fixa e/ou imóveis</string>
     <string name="C6">Entre 25,01 e 50% aplicado em renda variável e o restante em renda fixa e/ou imóveis</string>
     <string name="D6">Acima de 50% em renda variável </string>
 

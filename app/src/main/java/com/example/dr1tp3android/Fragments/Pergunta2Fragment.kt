@@ -8,10 +8,9 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
-
 import com.example.dr1tp3android.R
 import com.example.dr1tp3android.ViewModel.InvestidorViewModel
-import kotlinx.android.synthetic.main.fragment_pergunta1.*
+import kotlinx.android.synthetic.main.fragment_pergunta2.*
 
 class Pergunta2Fragment : Fragment() {
     private lateinit var investidor: InvestidorViewModel

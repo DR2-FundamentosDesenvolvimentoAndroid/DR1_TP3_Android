@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
-
 import com.example.dr1tp3android.R
 import com.example.dr1tp3android.ViewModel.InvestidorViewModel
 import kotlinx.android.synthetic.main.fragment_pergunta1.*
@@ -31,17 +30,17 @@ class Pergunta1Fragment : Fragment() {
             investidor = ViewModelProviders.of(it).get(InvestidorViewModel::class.java)
         }
 
-        btnProximo2.setOnClickListener{
-            if(respostaA2.isChecked){
+        btnProximo1.setOnClickListener{
+            if(respostaA1.isChecked){
                 investidor.acumulador += 0
                 findNavController().navigate(R.id.pergunta2Fragment)
-            }else if(respostaB2.isChecked){
+            }else if(respostaB1.isChecked){
                 investidor.acumulador += 2
                 findNavController().navigate(R.id.pergunta2Fragment)
-            }else if(respostaC2.isChecked){
+            }else if(respostaC1.isChecked){
                 investidor.acumulador += 3
                 findNavController().navigate(R.id.pergunta2Fragment)
-            }else if(respostaD2.isChecked){
+            }else if(respostaD1.isChecked){
                 investidor.acumulador += 4
                 findNavController().navigate(R.id.pergunta2Fragment)
             }else{

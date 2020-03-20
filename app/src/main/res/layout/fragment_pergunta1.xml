@@ -48,7 +48,7 @@
                 android:id="@+id/pergunta1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="1. Por quanto tempo você pretende deixar seu dinheiro investido?"
+                android:text="@string/Pergunta1"
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
@@ -61,24 +61,28 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
                     android:text="@string/A1" />
 
                 <RadioButton
                     android:id="@+id/respostaB1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
                     android:text="@string/B1" />
 
                 <RadioButton
                     android:id="@+id/respostaC1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
                     android:text="@string/C1" />
 
                 <RadioButton
                     android:id="@+id/respostaD1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
                     android:text="@string/D1" />
             </RadioGroup>
 
