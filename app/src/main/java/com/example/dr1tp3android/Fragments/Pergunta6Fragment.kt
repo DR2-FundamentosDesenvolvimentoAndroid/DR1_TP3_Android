@@ -5,7 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-
+import androidx.lifecycle.ViewModelProviders
+import androidx.navigation.fragment.findNavController
+import android.widget.Toast
+import kotlinx.android.synthetic.main.fragment_pergunta6.*
 import com.example.dr1tp3android.R
 import com.example.dr1tp3android.ViewModel.InvestidorViewModel
 
@@ -21,6 +24,33 @@ class Pergunta6Fragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_pergunta6, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        activity?.let {
+            investidor = ViewModelProviders.of(it).get(InvestidorViewModel::class.java)
+        }
+
+        btnProximo6.setOnClickListener{
+            if(respostaA6.isChecked){
+                investidor.acumulador += 0
+                findNavController().navigate(R.id.pergunta7Fragment)
+            }else if(respostaB6.isChecked){
+                investidor.acumulador += 2
+                findNavController().navigate(R.id.pergunta7Fragment)
+            }else if(respostaC6.isChecked){
+                investidor.acumulador += 3
+                findNavController().navigate(R.id.pergunta7Fragment)
+            }else if(respostaD6.isChecked){
+                investidor.acumulador += 4
+                findNavController().navigate(R.id.pergunta7Fragment)
+            }else{
+                Toast.makeText(context,
+                    "Por favor escolha uma alternativa",
+                    Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 
 }

@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
-
 import com.example.dr1tp3android.R
 import com.example.dr1tp3android.ViewModel.InvestidorViewModel
 import kotlinx.android.synthetic.main.fragment_pergunta3.*
@@ -36,16 +35,16 @@ class Pergunta3Fragment : Fragment() {
         btnProximo3.setOnClickListener{
             if(respostaA3.isChecked){
                 investidor.acumulador += 0
-                findNavController().navigate(R.id.pergunta2Fragment)
+                findNavController().navigate(R.id.pergunta4Fragment)
             }else if(respostaB3.isChecked){
                 investidor.acumulador += 1
-                findNavController().navigate(R.id.pergunta2Fragment)
+                findNavController().navigate(R.id.pergunta4Fragment)
             }else if(respostaC3.isChecked){
                 investidor.acumulador += 2
-                findNavController().navigate(R.id.pergunta2Fragment)
+                findNavController().navigate(R.id.pergunta4Fragment)
             }else if(respostaD3.isChecked){
                 investidor.acumulador += 4
-                findNavController().navigate(R.id.pergunta2Fragment)
+                findNavController().navigate(R.id.pergunta4Fragment)
             }else{
                 Toast.makeText(context,
                     "Por favor escolha uma alternativa",

@@ -5,9 +5,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-
+import android.widget.Toast
+import androidx.lifecycle.ViewModelProviders
+import androidx.navigation.fragment.findNavController
 import com.example.dr1tp3android.R
 import com.example.dr1tp3android.ViewModel.InvestidorViewModel
+import kotlinx.android.synthetic.main.fragment_pergunta4.*
+
 
 /**
  * A simple [Fragment] subclass.
@@ -21,6 +25,30 @@ class Pergunta4Fragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_pergunta4, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        activity?.let {
+            investidor = ViewModelProviders.of(it).get(InvestidorViewModel::class.java)
+        }
+
+        btnProximo4.setOnClickListener{
+            if(respostaA4.isChecked){
+                investidor.acumulador += 0
+                findNavController().navigate(R.id.pergunta5Fragment)
+            }else if(respostaB4.isChecked){
+                investidor.acumulador += 2
+                findNavController().navigate(R.id.pergunta5Fragment)
+            }else if(respostaC4.isChecked){
+                investidor.acumulador += 4
+                findNavController().navigate(R.id.pergunta5Fragment)
+            }else{
+                Toast.makeText(context,
+                    "Por favor escolha uma alternativa",
+                    Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 
 }
