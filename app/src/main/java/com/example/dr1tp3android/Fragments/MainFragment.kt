@@ -13,6 +13,7 @@ import com.example.dr1tp3android.R
 import com.example.dr1tp3android.ViewModel.InvestidorViewModel
 import kotlinx.android.synthetic.main.fragment_main.*
 
+
 class MainFragment : Fragment() {
 
     private lateinit var investidor: InvestidorViewModel
@@ -23,7 +24,6 @@ class MainFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_main, container, false)
-
 
     }
 
@@ -41,8 +41,9 @@ class MainFragment : Fragment() {
             }
             else{
                 val intent = Intent(activity, PerguntasActivity::class.java)
-                intent.putExtra("nome", investidor.nome)
+//                intent.putExtra("nome", investidor.nome)
                 startActivity(intent)
+
             }
         }
 

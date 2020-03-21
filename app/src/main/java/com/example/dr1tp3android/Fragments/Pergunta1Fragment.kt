@@ -1,5 +1,6 @@
 package com.example.dr1tp3android.Fragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -22,6 +23,7 @@ class Pergunta1Fragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_pergunta1, container, false)
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -29,6 +31,8 @@ class Pergunta1Fragment : Fragment() {
         activity?.let {
             investidor = ViewModelProviders.of(it).get(InvestidorViewModel::class.java)
         }
+
+        Toast.makeText(activity, "${investidor.nome}", Toast.LENGTH_LONG).show()
 
         btnProximo1.setOnClickListener{
             if(respostaA1.isChecked){

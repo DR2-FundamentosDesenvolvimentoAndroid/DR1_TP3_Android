@@ -7,9 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProviders
-import androidx.navigation.fragment.findNavController
 import android.widget.Toast
-import com.example.dr1tp3android.PerguntasActivity
+import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_pergunta11.*
 import com.example.dr1tp3android.R
 import com.example.dr1tp3android.ResultadoActivity
@@ -39,35 +38,43 @@ class Pergunta11Fragment : Fragment() {
         btnProximo11.setOnClickListener{
             if(respostaA11.isChecked){
                 investidor.acumulador += 0
+                val intent = Intent(activity, ResultadoActivity::class.java)
+                startActivity(intent)
+
             }else if(respostaB11.isChecked){
                 investidor.acumulador += 1
+
             }else if(respostaC11.isChecked){
                 investidor.acumulador += 2
+
             }else if(respostaD11.isChecked){
                 investidor.acumulador += 4
+
             }else if(respostaE11.isChecked){
                 investidor.acumulador += 5
+//                Toast.makeText(context, "${investidor.acumulador}", Toast.LENGTH_LONG).show()
+//                verificaPerfil(investidor.nome, investidor.acumulador)
             }else{
                 Toast.makeText(context,
                     "Por favor escolha uma alternativa",
                     Toast.LENGTH_SHORT).show()
             }
+        }
+    }
 
+    fun verificaPerfil(nome: String, pontos: Int){
 
-            var pontos = investidor.acumulador
-            var perfil = when(pontos){
-                in 0..12 -> "CONSERVADOR"
-                in 13..29 -> "MODERADO"
-                else -> "ARROJADO"
-
-            }
-            val intent = Intent(activity, ResultadoActivity::class.java)
-            intent.putExtra("perfil", perfil)
-            intent.putExtra("nome", investidor.nome)
-
-            startActivity(intent)
+        var resultado = when(pontos){
+            in 0..12 -> "CONSERVADOR"
+            in 13..29 -> "MODERADO"
+            else -> "ARROJADO"
 
         }
+
+        val intent = Intent(activity, ResultadoActivity::class.java)
+        intent.putExtra("perfil", resultado)
+        intent.putExtra("nome", nome)
+        startActivity(intent)
     }
 
 }

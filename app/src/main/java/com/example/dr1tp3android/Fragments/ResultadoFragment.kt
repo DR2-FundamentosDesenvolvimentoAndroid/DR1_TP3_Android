@@ -31,22 +31,7 @@ class ResultadoFragment : Fragment() {
             investidor = ViewModelProviders.of(it).get(InvestidorViewModel::class.java)
         }
 
-        var pontos = investidor.acumulador
-        var perfil = ""
-
-        if(pontos <= 12) {
-            perfil = "CONSERVADOR"
-        }else if(pontos >=13 && pontos <= 29){
-            perfil = "MODERADO"
-        }else if(pontos >= 30){
-            perfil = "ARROJADO"
-        }else{
-            perfil = "Erro"
-        }
-
         edTxtNomeResultado.setText(investidor.nome)
         edTxtPerfilResultado.setText(investidor.acumulador)
-
-
     }
 }

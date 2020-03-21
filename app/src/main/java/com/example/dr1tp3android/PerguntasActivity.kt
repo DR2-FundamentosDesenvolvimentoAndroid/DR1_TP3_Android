@@ -1,7 +1,9 @@
 package com.example.dr1tp3android
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.dr1tp3android.Fragments.Pergunta1Fragment
 import com.example.dr1tp3android.ViewModel.InvestidorViewModel
 
 class PerguntasActivity : AppCompatActivity() {
@@ -12,6 +14,5 @@ class PerguntasActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_perguntas)
 
-        investidor.nome = intent.getSerializableExtra("nome") as String
     }
 }
