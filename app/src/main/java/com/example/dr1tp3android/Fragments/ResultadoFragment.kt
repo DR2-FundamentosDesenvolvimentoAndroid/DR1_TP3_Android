@@ -6,14 +6,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.lifecycle.ViewModelProviders
-import com.example.dr1tp3android.PerguntasActivity
 import com.example.dr1tp3android.R
 import com.example.dr1tp3android.ViewModel.InvestidorViewModel
-import kotlinx.android.synthetic.main.fragment_main.*
+import kotlinx.android.synthetic.main.fragment_resultado.*
 
-class MainFragment : Fragment() {
+/**
+ * A simple [Fragment] subclass.
+ */
+class ResultadoFragment : Fragment() {
 
     private lateinit var investidor: InvestidorViewModel
 
@@ -22,9 +23,7 @@ class MainFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_main, container, false)
-
-
+        return inflater.inflate(R.layout.fragment_resultado, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -33,20 +32,26 @@ class MainFragment : Fragment() {
             investidor = ViewModelProviders.of(it).get(InvestidorViewModel::class.java)
         }
 
-        btnIniciar.setOnClickListener{
-            investidor.nome = txtResultado.text.toString()
+        var pontos = investidor.acumulador
+        var perfil = ""
 
-            if(investidor.nome == ""){
-                Toast.makeText(activity, "ERRO: Digite seu nome por favor!",Toast.LENGTH_SHORT).show()
-            }
-            else{
-                val intent = Intent(activity, PerguntasActivity::class.java)
-                startActivity(intent)
-            }
+        if(pontos <= 12) {
+            perfil = "CONSERVADOR"
+        }else if(pontos >=13 && pontos <= 29){
+            perfil = "MODERADO"
+        }else if(pontos >= 30){
+            perfil = "ARROJADO"
+        }else{
+            perfil = "Erro"
+        }
+
+        edTxtNomeResultado.setText(investidor.nome)
+        edTxtPerfilResultado.setText(perfil)
+
+
         }
 
 
     }
-
 
 }

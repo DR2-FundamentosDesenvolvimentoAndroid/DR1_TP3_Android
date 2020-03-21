@@ -9,42 +9,74 @@
         android:id="@+id/pergunta1Fragment"
         android:name="com.example.dr1tp3android.Fragments.Pergunta1Fragment"
         android:label="fragment_pergunta1"
-        tools:layout="@layout/fragment_pergunta1" />
+        tools:layout="@layout/fragment_pergunta1" >
+        <action
+            android:id="@+id/action_pergunta1Fragment_to_pergunta2Fragment"
+            app:destination="@id/pergunta2Fragment" />
+    </fragment>
     <fragment
         android:id="@+id/pergunta2Fragment"
         android:name="com.example.dr1tp3android.Fragments.Pergunta2Fragment"
         android:label="fragment_pergunta2"
-        tools:layout="@layout/fragment_pergunta2" />
+        tools:layout="@layout/fragment_pergunta2" >
+        <action
+            android:id="@+id/action_pergunta2Fragment_to_pergunta3Fragment"
+            app:destination="@id/pergunta3Fragment" />
+    </fragment>
     <fragment
         android:id="@+id/pergunta3Fragment"
         android:name="com.example.dr1tp3android.Fragments.Pergunta3Fragment"
         android:label="fragment_pergunta3"
-        tools:layout="@layout/fragment_pergunta3" />
+        tools:layout="@layout/fragment_pergunta3" >
+        <action
+            android:id="@+id/action_pergunta3Fragment_to_pergunta4Fragment"
+            app:destination="@id/pergunta4Fragment" />
+    </fragment>
     <fragment
         android:id="@+id/pergunta4Fragment"
         android:name="com.example.dr1tp3android.Fragments.Pergunta4Fragment"
         android:label="fragment_pergunta4"
-        tools:layout="@layout/fragment_pergunta4" />
+        tools:layout="@layout/fragment_pergunta4" >
+        <action
+            android:id="@+id/action_pergunta4Fragment_to_pergunta5Fragment"
+            app:destination="@id/pergunta5Fragment" />
+    </fragment>
     <fragment
         android:id="@+id/pergunta5Fragment"
         android:name="com.example.dr1tp3android.Fragments.Pergunta5Fragment"
         android:label="fragment_pergunta5"
-        tools:layout="@layout/fragment_pergunta5" />
+        tools:layout="@layout/fragment_pergunta5" >
+        <action
+            android:id="@+id/action_pergunta5Fragment_to_pergunta6Fragment2"
+            app:destination="@id/pergunta6Fragment" />
+    </fragment>
     <fragment
         android:id="@+id/pergunta6Fragment"
         android:name="com.example.dr1tp3android.Fragments.Pergunta6Fragment"
         android:label="fragment_pergunta6"
-        tools:layout="@layout/fragment_pergunta6" />
+        tools:layout="@layout/fragment_pergunta6" >
+        <action
+            android:id="@+id/action_pergunta6Fragment_to_pergunta7Fragment2"
+            app:destination="@id/pergunta7Fragment" />
+    </fragment>
     <fragment
         android:id="@+id/pergunta7Fragment"
         android:name="com.example.dr1tp3android.Fragments.Pergunta7Fragment"
         android:label="fragment_pergunta7"
-        tools:layout="@layout/fragment_pergunta7" />
+        tools:layout="@layout/fragment_pergunta7" >
+        <action
+            android:id="@+id/action_pergunta7Fragment_to_pergunta10Fragment2"
+            app:destination="@id/pergunta10Fragment" />
+    </fragment>
     <fragment
         android:id="@+id/pergunta10Fragment"
         android:name="com.example.dr1tp3android.Fragments.Pergunta10Fragment"
         android:label="fragment_pergunta10"
-        tools:layout="@layout/fragment_pergunta10" />
+        tools:layout="@layout/fragment_pergunta10" >
+        <action
+            android:id="@+id/action_pergunta10Fragment_to_pergunta11Fragment2"
+            app:destination="@id/pergunta11Fragment" />
+    </fragment>
     <fragment
         android:id="@+id/pergunta11Fragment"
         android:name="com.example.dr1tp3android.Fragments.Pergunta11Fragment"
