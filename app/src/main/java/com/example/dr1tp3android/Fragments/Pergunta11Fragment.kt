@@ -1,5 +1,6 @@
 package com.example.dr1tp3android.Fragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,8 +9,10 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
 import android.widget.Toast
+import com.example.dr1tp3android.PerguntasActivity
 import kotlinx.android.synthetic.main.fragment_pergunta11.*
 import com.example.dr1tp3android.R
+import com.example.dr1tp3android.ResultadoActivity
 import com.example.dr1tp3android.ViewModel.InvestidorViewModel
 
 /**
@@ -32,27 +35,38 @@ class Pergunta11Fragment : Fragment() {
             investidor = ViewModelProviders.of(it).get(InvestidorViewModel::class.java)
         }
 
+
         btnProximo11.setOnClickListener{
             if(respostaA11.isChecked){
                 investidor.acumulador += 0
-                findNavController().navigate(R.id.pergunta11Fragment)
             }else if(respostaB11.isChecked){
                 investidor.acumulador += 1
-                findNavController().navigate(R.id.pergunta11Fragment)
             }else if(respostaC11.isChecked){
                 investidor.acumulador += 2
-                findNavController().navigate(R.id.pergunta11Fragment)
             }else if(respostaD11.isChecked){
                 investidor.acumulador += 4
-                findNavController().navigate(R.id.pergunta11Fragment)
             }else if(respostaE11.isChecked){
                 investidor.acumulador += 5
-                findNavController().navigate(R.id.pergunta11Fragment)
             }else{
                 Toast.makeText(context,
                     "Por favor escolha uma alternativa",
                     Toast.LENGTH_SHORT).show()
             }
+
+
+            var pontos = investidor.acumulador
+            var perfil = when(pontos){
+                in 0..12 -> "CONSERVADOR"
+                in 13..29 -> "MODERADO"
+                else -> "ARROJADO"
+
+            }
+            val intent = Intent(activity, ResultadoActivity::class.java)
+            intent.putExtra("perfil", perfil)
+            intent.putExtra("nome", investidor.nome)
+
+            startActivity(intent)
+
         }
     }
 

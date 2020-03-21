@@ -5,4 +5,5 @@ import androidx.lifecycle.ViewModel
 class InvestidorViewModel: ViewModel() {
     var nome: String = "null"
     var acumulador: Int = 0
+    var perfil: String = ""
 }

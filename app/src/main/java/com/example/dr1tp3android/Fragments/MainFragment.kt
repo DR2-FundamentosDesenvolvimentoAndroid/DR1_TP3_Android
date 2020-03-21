@@ -41,6 +41,7 @@ class MainFragment : Fragment() {
             }
             else{
                 val intent = Intent(activity, PerguntasActivity::class.java)
+                intent.putExtra("nome", investidor.nome)
                 startActivity(intent)
             }
         }

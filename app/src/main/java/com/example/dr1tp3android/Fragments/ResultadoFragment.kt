@@ -1,6 +1,5 @@
 package com.example.dr1tp3android.Fragments
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -46,12 +45,8 @@ class ResultadoFragment : Fragment() {
         }
 
         edTxtNomeResultado.setText(investidor.nome)
-        edTxtPerfilResultado.setText(perfil)
-
-
-        }
+        edTxtPerfilResultado.setText(investidor.acumulador)
 
 
     }
-
 }
