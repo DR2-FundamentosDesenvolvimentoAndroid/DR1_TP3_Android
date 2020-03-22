@@ -3,7 +3,7 @@ package com.example.dr1tp3android
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.dr1tp3android.ViewModel.InvestidorViewModel
-import kotlinx.android.synthetic.main.fragment_resultado.*
+import kotlinx.android.synthetic.main.activity_resultado.*
 
 class ResultadoActivity : AppCompatActivity() {
 
@@ -13,10 +13,10 @@ class ResultadoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_resultado)
 
-//        var nome = intent.getSerializableExtra("nome") as String
-//        var perfil = intent.getSerializableExtra("perfil") as String
+        var nome = intent.getSerializableExtra("nome") as String
+        var resultado = intent.getSerializableExtra("resultado") as String
 
-        edTxtNomeResultado.setText(investidor.nome)
-        edTxtNomeResultado.setText(investidor.acumulador)
+        edTxtNomeResultado.setText(nome)
+        edTxtPerfilResultado.setText(resultado)
     }
 }

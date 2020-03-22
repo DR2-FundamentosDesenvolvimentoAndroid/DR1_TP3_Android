@@ -23,7 +23,6 @@ class Pergunta1Fragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_pergunta1, container, false)
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -31,7 +30,7 @@ class Pergunta1Fragment : Fragment() {
         activity?.let {
             investidor = ViewModelProviders.of(it).get(InvestidorViewModel::class.java)
         }
-
+        //TESTANDO SE FOI RECEBIDO COM SUCESSO O NOME DA ACTIVITY MAIN
         Toast.makeText(activity, "${investidor.nome}", Toast.LENGTH_LONG).show()
 
         btnProximo1.setOnClickListener{

@@ -38,22 +38,19 @@ class Pergunta11Fragment : Fragment() {
         btnProximo11.setOnClickListener{
             if(respostaA11.isChecked){
                 investidor.acumulador += 0
-                val intent = Intent(activity, ResultadoActivity::class.java)
-                startActivity(intent)
-
+                verificaPerfil(investidor.nome, investidor.acumulador)
             }else if(respostaB11.isChecked){
                 investidor.acumulador += 1
-
+                verificaPerfil(investidor.nome, investidor.acumulador)
             }else if(respostaC11.isChecked){
                 investidor.acumulador += 2
-
+                verificaPerfil(investidor.nome, investidor.acumulador)
             }else if(respostaD11.isChecked){
                 investidor.acumulador += 4
-
+                verificaPerfil(investidor.nome, investidor.acumulador)
             }else if(respostaE11.isChecked){
                 investidor.acumulador += 5
-//                Toast.makeText(context, "${investidor.acumulador}", Toast.LENGTH_LONG).show()
-//                verificaPerfil(investidor.nome, investidor.acumulador)
+                verificaPerfil(investidor.nome, investidor.acumulador)
             }else{
                 Toast.makeText(context,
                     "Por favor escolha uma alternativa",
@@ -68,12 +65,11 @@ class Pergunta11Fragment : Fragment() {
             in 0..12 -> "CONSERVADOR"
             in 13..29 -> "MODERADO"
             else -> "ARROJADO"
-
         }
 
         val intent = Intent(activity, ResultadoActivity::class.java)
-        intent.putExtra("perfil", resultado)
         intent.putExtra("nome", nome)
+        intent.putExtra("resultado", resultado)
         startActivity(intent)
     }
 
