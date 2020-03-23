@@ -34,24 +34,30 @@ class Pergunta1Fragment : Fragment() {
 //        Toast.makeText(activity, investidor.nome, Toast.LENGTH_LONG).show()
 
         btnProximo1.setOnClickListener{
-            if(respostaA1.isChecked){
-                investidor.acumulador += 0
-                findNavController().navigate(R.id.pergunta2Fragment)
-            }else if(respostaB1.isChecked){
-                investidor.acumulador += 2
-                findNavController().navigate(R.id.pergunta2Fragment)
-            }else if(respostaC1.isChecked){
-                investidor.acumulador += 3
-                findNavController().navigate(R.id.pergunta2Fragment)
-            }else if(respostaD1.isChecked){
-                investidor.acumulador += 4
-                findNavController().navigate(R.id.pergunta2Fragment)
-            }else{
-                Toast.makeText(context,
-                    "Por favor escolha uma alternativa",
-                    Toast.LENGTH_SHORT).show()
-            }
+            redirecionaFragment()
         }
+    }
+
+    fun redirecionaFragment(){
+        if(respostaA1.isChecked){
+            investidor.acumulador += 0
+            findNavController().navigate(R.id.action_pergunta1Fragment_to_pergunta2Fragment)
+        }else if(respostaB1.isChecked){
+            investidor.acumulador += 2
+            findNavController().navigate(R.id.action_pergunta1Fragment_to_pergunta2Fragment)
+        }else if(respostaC1.isChecked){
+            investidor.acumulador += 3
+            findNavController().navigate(R.id.action_pergunta1Fragment_to_pergunta2Fragment)
+        }else if(respostaD1.isChecked){
+            investidor.acumulador += 4
+            findNavController().navigate(R.id.action_pergunta1Fragment_to_pergunta2Fragment)
+        }else{
+            Toast.makeText(context,
+                "Por favor escolha uma alternativa",
+                Toast.LENGTH_SHORT).show()
+        }
+
+
     }
 
 }

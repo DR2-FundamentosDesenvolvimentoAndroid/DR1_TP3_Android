@@ -33,24 +33,27 @@ class Pergunta6Fragment : Fragment() {
         }
 
         btnProximo6.setOnClickListener{
-            if(respostaA6.isChecked){
-                investidor.acumulador += 0
-                findNavController().navigate(R.id.pergunta7Fragment)
-            }else if(respostaB6.isChecked){
-                investidor.acumulador += 2
-                findNavController().navigate(R.id.pergunta7Fragment)
-            }else if(respostaC6.isChecked){
-                investidor.acumulador += 3
-                findNavController().navigate(R.id.pergunta7Fragment)
-            }else if(respostaD6.isChecked){
-                investidor.acumulador += 4
-                findNavController().navigate(R.id.pergunta7Fragment)
-            }else{
-                Toast.makeText(context,
-                    "Por favor escolha uma alternativa",
-                    Toast.LENGTH_SHORT).show()
-            }
+            redirecionaFragment()
         }
     }
 
+    fun redirecionaFragment(){
+        if(respostaA6.isChecked){
+            investidor.acumulador += 0
+            findNavController().navigate(R.id.action_pergunta6Fragment_to_pergunta7Fragment2)
+        }else if(respostaB6.isChecked){
+            investidor.acumulador += 2
+            findNavController().navigate(R.id.action_pergunta6Fragment_to_pergunta7Fragment2)
+        }else if(respostaC6.isChecked){
+            investidor.acumulador += 3
+            findNavController().navigate(R.id.action_pergunta6Fragment_to_pergunta7Fragment2)
+        }else if(respostaD6.isChecked){
+            investidor.acumulador += 4
+            findNavController().navigate(R.id.action_pergunta6Fragment_to_pergunta7Fragment2)
+        }else{
+            Toast.makeText(context,
+                "Por favor escolha uma alternativa",
+                Toast.LENGTH_SHORT).show()
+        }
+    }
 }

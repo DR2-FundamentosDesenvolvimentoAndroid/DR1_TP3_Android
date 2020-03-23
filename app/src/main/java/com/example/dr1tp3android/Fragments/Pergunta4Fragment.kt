@@ -34,21 +34,24 @@ class Pergunta4Fragment : Fragment() {
         }
 
         btnProximo4.setOnClickListener{
-            if(respostaA4.isChecked){
-                investidor.acumulador += 0
-                findNavController().navigate(R.id.pergunta5Fragment)
-            }else if(respostaB4.isChecked){
-                investidor.acumulador += 2
-                findNavController().navigate(R.id.pergunta5Fragment)
-            }else if(respostaC4.isChecked){
-                investidor.acumulador += 4
-                findNavController().navigate(R.id.pergunta5Fragment)
-            }else{
-                Toast.makeText(context,
-                    "Por favor escolha uma alternativa",
-                    Toast.LENGTH_SHORT).show()
-            }
+            redirecionaFragment()
         }
     }
 
+    fun redirecionaFragment(){
+        if(respostaA4.isChecked){
+            investidor.acumulador += 0
+            findNavController().navigate(R.id.action_pergunta4Fragment_to_pergunta5Fragment)
+        }else if(respostaB4.isChecked){
+            investidor.acumulador += 2
+            findNavController().navigate(R.id.action_pergunta4Fragment_to_pergunta5Fragment)
+        }else if(respostaC4.isChecked){
+            investidor.acumulador += 4
+            findNavController().navigate(R.id.action_pergunta4Fragment_to_pergunta5Fragment)
+        }else{
+            Toast.makeText(context,
+                "Por favor escolha uma alternativa",
+                Toast.LENGTH_SHORT).show()
+        }
+    }
 }

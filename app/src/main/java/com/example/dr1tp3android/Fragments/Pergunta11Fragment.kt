@@ -61,7 +61,7 @@ class Pergunta11Fragment : Fragment() {
 
     fun verificaPerfil(nome: String, pontos: Int){
 
-        var resultado = when(pontos){
+        val resultado = when(pontos){
             in 0..12 -> "CONSERVADOR"
             in 13..29 -> "MODERADO"
             else -> "ARROJADO"

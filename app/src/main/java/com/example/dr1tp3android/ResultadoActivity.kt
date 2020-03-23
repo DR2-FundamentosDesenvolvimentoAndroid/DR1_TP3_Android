@@ -13,10 +13,10 @@ class ResultadoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_resultado)
 
-        var nome = intent.getSerializableExtra("nome") as String
-        var resultado = intent.getSerializableExtra("resultado") as String
+        val nome = intent.getSerializableExtra("nome") as String
+        val resultado = intent.getSerializableExtra("resultado") as String
 
-        edTxtNomeResultado.setText(nome)
-        edTxtPerfilResultado.setText(resultado)
+        edTxtNomeResultado.text = nome
+        edTxtPerfilResultado.text = resultado
     }
 }
