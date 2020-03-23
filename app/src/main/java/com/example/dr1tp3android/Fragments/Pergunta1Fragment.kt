@@ -31,7 +31,7 @@ class Pergunta1Fragment : Fragment() {
             investidor = ViewModelProviders.of(it).get(InvestidorViewModel::class.java)
         }
         //TESTANDO SE FOI RECEBIDO COM SUCESSO O NOME DA ACTIVITY MAIN
-        Toast.makeText(activity, investidor.nome, Toast.LENGTH_LONG).show()
+//        Toast.makeText(activity, investidor.nome, Toast.LENGTH_LONG).show()
 
         btnProximo1.setOnClickListener{
             if(respostaA1.isChecked){
